@@ -1,0 +1,17 @@
+docker run <image_name> -> Cria um container a partir de uma imagem (Se não houver uma local
+ele busca no docker hub)
+
+docker rm <container_id> -> remove um container
+docker ps -> Lista os containeirs de pé.
+docker ps -a -> Lista todos os containers existentes, ativos ou não.
+
+docker images -> exibe as imagens baixadas.
+docker rmi <image_name> remove uma imagem.
+
+docker pull <image_name> -> puxa uma imagem do docker hub pra sua máquina local.
+
+docker exec -it <container_id> bash -> entrar dentro do ambiente do container
+
+
+docker stop <container_id> -> para um container ativo
+docker start <container_id> -> starta um container parado
