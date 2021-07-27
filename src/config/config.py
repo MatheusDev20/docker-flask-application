@@ -4,13 +4,13 @@ from sqlalchemy.orm import sessionmaker
 class DBConnection:
   
   def __init__(self) -> None:
-    self.__connection_string = "mysql+pymysql://root:lhama@mysqldb/teste" 
+    self.__connection_string = "mysql+pymysql://root:docker123@mysqldb/teste" 
     self.session = None
 
   def __enter__(self):
     engine = create_engine(self.__connection_string)
-    sessionmaker = sessionmaker()
-    self.session = sessionmaker(bind=engine)
+    session_maker = sessionmaker()
+    self.session = session_maker(bind=engine)
 
     return self
 

@@ -5,7 +5,7 @@ from src.config import Base
 class Users(Base):
   __tablename__ = "users"
 
-  id = Column(Integer, primary_key=true)
+  id = Column(Integer, primary_key=True)
   name = Column(String)
 
   def __repr__(self) -> str:
